@@ -3,9 +3,9 @@
  * Replace these literal tokens with real values before launch.
  */
 export const placeholders = {
-  phone: "(Carlos Phone)",
-  email: "(Carlos Email)",
-  officeAddress: "(Carlos Office Address)",
+  phone: "407-516-4209",
+  email: "csantana@floridaagent4u.com",
+  officeAddress: "1230 Oakley Seaver Dr, Suite 101, Clermont, FL 34711",
   domain: "(Carlos Domain)",
   instagram: "(Carlos Instagram)",
   facebook: "(Carlos Facebook)",

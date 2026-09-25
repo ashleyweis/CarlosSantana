@@ -22,11 +22,21 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-slate-200">
             <li>
               <span className="text-slate-400">Phone: </span>
-              {placeholders.phone}
+              <a
+                href={`tel:${placeholders.phone.replace(/\D/g, "")}`}
+                className="underline decoration-brand-gold/60 hover:text-white"
+              >
+                {placeholders.phone}
+              </a>
             </li>
             <li>
               <span className="text-slate-400">Email: </span>
-              {placeholders.email}
+              <a
+                href={`mailto:${placeholders.email}`}
+                className="underline decoration-brand-gold/60 hover:text-white"
+              >
+                {placeholders.email}
+              </a>
             </li>
             <li>
               <span className="text-slate-400">Office: </span>

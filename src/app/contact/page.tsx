@@ -32,11 +32,25 @@ export default function ContactPage() {
           <dl className="mt-4 space-y-3 text-sm text-brand-slate">
             <div>
               <dt className="font-semibold text-brand-blue">Phone</dt>
-              <dd>{placeholders.phone}</dd>
+              <dd>
+                <a
+                  href={`tel:${placeholders.phone.replace(/\D/g, "")}`}
+                  className="underline decoration-brand-gold"
+                >
+                  {placeholders.phone}
+                </a>
+              </dd>
             </div>
             <div>
               <dt className="font-semibold text-brand-blue">Email</dt>
-              <dd>{placeholders.email}</dd>
+              <dd>
+                <a
+                  href={`mailto:${placeholders.email}`}
+                  className="underline decoration-brand-gold"
+                >
+                  {placeholders.email}
+                </a>
+              </dd>
             </div>
             <div>
               <dt className="font-semibold text-brand-blue">Office</dt>
