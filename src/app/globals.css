@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --brand-blue: #1e3a8a;
+  --brand-blue-deep: #172554;
+  --brand-blue-mid: #1d4ed8;
+  --brand-gold: #c9a227;
+  --brand-gold-soft: #e8d48b;
+  --brand-cream: #f8f6f1;
+  --brand-slate: #334155;
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-deep: var(--brand-blue-deep);
+  --color-brand-blue-mid: var(--brand-blue-mid);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-soft: var(--brand-gold-soft);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-slate: var(--brand-slate);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--brand-gold) 35%, white);
+  color: var(--brand-blue-deep);
+}
