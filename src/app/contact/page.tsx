@@ -18,8 +18,9 @@ export default function ContactPage() {
           Let&apos;s talk
         </h1>
         <p className="mt-4 text-brand-slate">
-          Share a little about your goals. Phase 1A shows a success message on
-          submit; Formspree (or similar) can be wired later — see the README.
+          Share a little about your goals. This form sends your details to
+          Carlos through Google Forms. Name, email, phone, and interest are
+          required; a message is optional.
         </p>
       </div>
 

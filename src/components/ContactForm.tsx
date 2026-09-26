@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    
+
     const form = e.currentTarget;
     const formData = new FormData(form);
 
@@ -56,11 +56,10 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       className="space-y-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
-      noValidate
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-sm">
-          <span className="font-medium text-brand-slate">Name</span>
+          <span className="font-medium text-brand-slate">Name <span className="text-brand-blue">*</span></span>
           <input
             required
             name="entry.299544885"
@@ -70,7 +69,7 @@ export default function ContactForm() {
           />
         </label>
         <label className="block text-sm">
-          <span className="font-medium text-brand-slate">Email</span>
+          <span className="font-medium text-brand-slate">Email <span className="text-brand-blue">*</span></span>
           <input
             required
             name="entry.828714478"
@@ -81,8 +80,9 @@ export default function ContactForm() {
         </label>
       </div>
       <label className="block text-sm">
-        <span className="font-medium text-brand-slate">Phone</span>
+        <span className="font-medium text-brand-slate">Phone <span className="text-brand-blue">*</span></span>
         <input
+          required
           name="entry.2037809002"
           type="tel"
           className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-foreground outline-none ring-brand-gold focus:ring-2"
@@ -90,8 +90,9 @@ export default function ContactForm() {
         />
       </label>
       <label className="block text-sm">
-        <span className="font-medium text-brand-slate">I am interested in</span>
+        <span className="font-medium text-brand-slate">I am interested in <span className="text-brand-blue">*</span></span>
         <select
+          required
           name="entry.1281975932"
           className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-foreground outline-none ring-brand-gold focus:ring-2"
           defaultValue="Buying"
@@ -103,9 +104,8 @@ export default function ContactForm() {
         </select>
       </label>
       <label className="block text-sm">
-        <span className="font-medium text-brand-slate">Message</span>
+        <span className="font-medium text-brand-slate">Message <span className="font-normal text-slate-500">(optional)</span></span>
         <textarea
-          required
           name="entry.1910010670"
           rows={5}
           className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-foreground outline-none ring-brand-gold focus:ring-2"

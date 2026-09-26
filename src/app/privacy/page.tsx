@@ -17,9 +17,9 @@ export default function PrivacyPage() {
         <p>
           This marketing website for {broker.name} ({broker.license}) collects
           only the information you voluntarily provide through the contact form
-          (name, email, phone, and message). In Phase 1A, form submissions are
-          handled in the browser for demonstration and are not stored on a
-          server until a form service such as Formspree is connected.
+          (name, email, phone, interest, and an optional message). Submissions
+          are sent to a Google Form so Carlos can follow up. Google receives
+          those fields when you submit.
         </p>
         <p>
           We do not sell personal information. Contact details shown on this
